@@ -1,0 +1,335 @@
+@media (max-width: 1200px) 
+    .menu
+        .menu_item
+            padding-right: 20px
+        .menu_link
+            font-size: 15px
+            padding-left: 15px
+    .promo
+        &_header 
+            margin-top: 30px
+            font-size: 40px   
+    .subheader
+        &_phone
+            padding-left: 20px
+    .mobile
+        &_item 
+            width: 300px
+    footer
+        .footer_text 
+            font-size: 13px
+@media (max-width: 991px) 
+    .menu
+        .menu_item
+            padding-right: 15px
+        .menu_link
+            font-size: 12px
+    .subheader
+        &_logo
+            img
+                 width: 100%
+        &_phone
+            font-size: 18px
+        &_btn
+            width: 147px
+            margin-top: 23px
+            height: 40px
+    .promo
+        &_header
+            font-size: 36px
+        &_subheader
+            font-size: 30px
+
+@media (max-width: 767px) 
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8) 
+        transition: 0.6s all
+        &_active
+            left: 0
+        .menu_item
+            padding-right: 0px
+            border: none
+            margin: 60px 0px 0px
+        .menu_link
+            font-size: 18px
+     
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.4s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+
+    nav 
+        background: #212121
+        position: fixed
+        z-index: 3
+        width: 100%
+        height: 58px
+
+    .block_row
+        flex-direction: column
+        .content
+            width: 100% 
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        .subheader_position
+            position: absolute
+        &_phone 
+            margin-top: 5px
+            color: #FFF
+            text-align: center
+            font-size: 15px
+            font-weight: 400
+            line-height: 40px
+            text-transform: uppercase
+            display: block
+            position: relative
+            right: -130%
+        &_btn
+            position: relative
+            right: -145%
+            margin-top: -6px
+            width: 130px
+            height: 35px
+            font-size: 12px
+    .promo
+        &_header
+            font-size: 33px
+        &_subheader
+            font-size: 24px
+        &_descr
+            line-height: 27px
+            font-size: 16px
+        &_btn   
+            margin-top: 70px
+    .reklama
+        &_img
+            height: 336px
+            margin: 93px auto
+    footer
+        .wrapper
+            grid-template-columns: 1fr
+        .footer_block
+            grid-row-start: 2
+            margin: 15px auto
+        .footer_text
+            grid-row-start: 1
+        .footer_end
+            grid-row-start: 3
+            margin: -30px auto
+            height: 110px
+@media (max-width: 575px) 
+    .menu
+        .menu_item
+            width:100%
+            text-align: center
+        .menu_link
+            display: block
+            
+    .subheader
+        &_official
+            display: none
+        &_logo
+            padding-top: 35px
+
+        &_btn
+            right: -118%
+            margin-top: 25px
+            width: 125px
+            height: 35px
+            font-size: 9px
+        
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            color: #FFF
+            text-align: center
+            font-size: 1.875rem
+            font-weight: 900
+            line-height: normal
+            text-transform: uppercase
+    .pritch
+        .pritch2
+            font-size: 14px
+            color: #222
+            text-align: center
+            font-weight: 700
+            text-transform: uppercase
+            margin-top: 10px
+        .block_row_img
+            height: 77px
+            width: 77px
+        .content_text
+            font-size: 12px
+            margin-left: -60px
+            
+        .zagolovok 
+            font-size: 14px
+    .mobile
+        padding: 16px
+        .vamo_btn
+            margin-top: 16px
+        &_predlogenie
+            color: #222
+            text-align: center
+            font-family: Roboto
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            margin-top: 16px
+        .subtitle
+            color: #222
+            text-align: center
+            font-size: 14px
+            font-weight: 400
+        &_item
+            width: 254px
+            height: 254px
+    .reklama
+        background: url(../img/bg_paint1.png) 
+        min-height: 395px
+        .title  
+            display: none
+        .reklama_subtitle
+            display: none
+        &_img
+            width: 270px
+            height: 180px
+            margin: 84px auto
+        &_text
+            color: #FFFFFF
+            padding-bottom: 31px
+            margin: 0   
+    .require
+        padding: 0
+        .trebovonia
+            color: #222
+            text-align: center
+            font-family: Roboto
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 16px
+            text-transform: uppercase
+            margin-top: 16px
+        &_block
+            margin-top: 15px
+            
+        &_title  
+            color: #1CA8C3
+            font-size: 16px
+            font-weight: 400
+        &_list
+            li
+                color: #222
+                font-size: 14px
+                font-weight: 300
+                margin-bottom: 0px
+        &_descr
+            color: #1CA8C3
+            font-size: 14px
+            font-weight: 300
+            line-height: normal
+            margin-top: 15px
+    .world
+        min-height: 400px   
+        .title_world
+            color: #FFF
+            text-align: center
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            margin-top: 16px
+        &_li
+            color: #1FBAD6
+            text-align: center
+            font-size: 15px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 240px
+    .reklama_subtitle
+        color: #FFF
+        text-align: center
+        font-size: 14px
+        font-weight: 400
+        margin-top: 11px
+   
+    footer		
+        .footer_razdel
+            width: 255px
+            height: 6px
+        .wrapper
+            max-width: 280px
+            margin: 0 auto
+        .footer_radius
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 35px
+            height: 35px
+            background-color: #070716
+            border-radius: 100%	
+            margin-left: 4px
+            list-style-type: none
+            i
+                color: #fff
+                
+        .footer_block
+            max-width: 280px
+            margin: 0 auto
+            margin-top:16.5px
+            margin-bottom: 19px
+        .footer_text
+            max-width: 280px
+            margin: 0
+        .footer_menu
+            max-width: 280px
+            justify-content: space-between
+            flex-wrap: wrap
+        .footer_grey
+            max-width: 280px
+            display: flex
+            flex-wrap: wrap
+        .footer_back
+            max-width: 280px
+            display: flex
+            justify-content: center
+        .footer_img
+            max-width: 280px
+            justify-content: center
+            margin: 52px 25px
+    .xs-visible
+        display: none
